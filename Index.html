@@ -1,0 +1,371 @@
+<HTML>
+	<HEAD>
+	<title>Spectrum Mobile</title>
+	<meta charset="UTF-8">
+	<meta name="Dipesh Bharati" content="My website">
+	</HEAD>
+
+<body>
+	<script src="../Javascript/myScript.js"></script>
+	<style>
+
+		.header-section {
+			height: 100vh;
+			background: url(../Images/darkwood.jpg);
+			background-size: cover;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 50px 5vw;
+
+		}
+
+		.header-heading {
+			font-size: 100px;
+			text-transform: capitalize;
+			color: #fff;
+		}
+
+		.header-heading span {
+			color: #d5be8b;
+		}
+
+		.btn {
+			background-color: #4CAF50;
+			/* Green */
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin-bottom: 15px;
+		}
+
+		.about {
+			height: 100vh;
+		}
+
+		.mid-section {
+			width: 100%;
+			height: 800px;
+			padding: 40px 5vw;
+		}
+
+		.section-item-container {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			padding: 20px;
+
+		}
+
+
+		.section-bg {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+		}
+
+		.section-info {
+			width: 50%;
+			height: 100%;
+			background: #fff;
+			display: block;
+			margin-left: auto;
+			padding: 50px;
+			text-align: center;
+		}
+
+		.title {
+			font-size: 60px;
+			line-height: 100px;
+		}
+
+		.title span {
+			color: #d5be8b;
+		}
+
+		.info {
+			font-family: 'lato', sans-serif;
+			font-size: 25px;
+			line-height: 45px;
+			opacity: 0.5;
+		}
+
+		/* review section */
+
+		.review-section {
+			padding: 50px 5vw;
+		}
+
+		.section-title span {
+			color: #d5be8b;
+		}
+
+		.review-container {
+			margin: 50px;
+			margin-bottom: 0;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.review-card {
+			width: 250px;
+			height: auto;
+			font-family: 'lato', sans-serif;
+		}
+
+		.user-dp {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			position: relative;
+		}
+
+		.user-dp img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		
+
+		.user-dp::after {
+			content: attr(data-rating);
+			position: absolute;
+			bottom: 0;
+			right: -20px;
+			padding: 5px 20px;
+			border-radius: 20px;
+			background: #d5be8b;
+		}
+
+		.review-title {
+			font-size: 20px;
+			line-height: 25px;
+			margin: 30px 0;
+			text-transform: capitalize;
+		}
+
+		.review {
+			opacity: 0.7;
+		}
+
+		.end-section .section-info {
+			margin: 0;
+		}
+
+		.end-section .title {
+			font-size: 100px;
+			line-height: 150px;
+			margin: 50px;
+		}
+
+		.best-selling-product-section {
+			position: relative;
+			padding: 60px 5vw;
+			overflow: hidden;
+		}
+
+		.section-title {
+			text-transform: capitalize;
+			font-size: 30px;
+			margin-bottom: 30px;
+		}
+
+		.product-container {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.product-card {
+			border: 15px solid #d5be8b;
+			width: 300px;
+			height: 300px;
+			overflow: hidden;
+			position: relative;
+			background: #d5be8b;
+			margin-right: 5%;
+		}
+
+		.product-card {
+			border-color: #190c05;
+			background: #190c05;
+		}
+
+		.product-img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: .5s;
+		}
+
+		.product-name {
+			position: absolute;
+			color: #fff;
+			text-transform: capitalize;
+			font-family: 'lato', sans-serif;
+			font-size: 25px;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			opacity: 0;
+			transition: .5s;
+		}
+
+		.product-card:hover .product-name {
+			opacity: 1;
+		}
+
+		.product-card:hover .product-img {
+			opacity: 0.5;
+		}
+
+		button {
+			background-color: #d5be8b;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+		}
+
+		/* NAVBAR */
+	</style>
+	<link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+	<style type="text/css"></style>
+	<DIV class="top">
+		<DIV class="Navbar">
+			<img src="../Images/logo.png">
+			<ul>
+				<li class="active"><a href="Index.html">Home </a></li>
+				<li><a href="../Pages/Page1.html">Products</a></li>
+				<li><a href="../Pages/Page2.html">Blog</a></li>
+				<li><a href="../Pages/Page3.html">Research</a></li>
+				<li><a href="../Pages/Page4.html">Contact</a></li>
+			</ul>
+		</DIV>
+	</DIV>
+
+
+	<!-- MAIN VIEW -->
+	<div class="main">
+		<header class="header-section" style="margin-top:20px">
+			<h1 class="header-heading"><span>Spectrum </span> Mobile</h1>
+		</header>
+
+	</div>
+
+
+	<!-- BEST SELLING PRODUCTS -->
+	<section class="best-selling-product-section">
+		<h1 class="section-title">Best Selling Products</h1>
+		<div class="product-container">
+			<div class="product-card">
+				<img src="../Images/iphone.png" class="product-img" alt="">
+				<p class="product-name">Iphone 13 Pro Max →</p>
+			</div>
+			<div class="product-card">
+				<img src="../Images/s22.jpg" class="product-img" alt="">
+				<p class="product-name">Samsung Galaxy S22 Ultra →</p>
+			</div>
+			<div class="product-card">
+				<img src="../Images/oneplus.jpg" class="product-img" alt="">
+				<p class="product-name">One Plus Nord N10 →</p>
+			</div>
+			<div class="product-card">
+				<img src="../Images/redmi.jpg" class="product-img" alt="">
+				<p class="product-name">Redmi Note 9 →</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- ABOUT US -->
+	<section class="mid-section">
+		<div class="section-item-container">
+			<img src="../Images/cell2.jpg" class="section-bg" alt="">
+			<div class="section-info">
+				<h1 class="title">About <span>Us</span></h1>
+				<p class="info">Honestly, as long as you know exactly what you want, you can either buy mobile phones
+					online or visit a store to do so.
+					Spectrum Mobile tries to provide a smooth purchasing experience, whether in-store, online, or on
+					mobile.
+					Personalized exclusive discounts, flexible EMI payment choices, and other benefits are just a few of
+					the advantages we provide.
+					Also, while mobile phone prices in Nepal vary by brand and technology, we work hard to offer a
+					diverse selection of phones to suit every budget.
+					After all, Spectrum Mobile's main goal is to make our customer's dreams come true.</p>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- REVIEW SECTION -->
+	<section class="review-section">
+		<h1 class="section-title">What our <span>customers</span> says about us</h1>
+		<div class="review-container">
+			<div class="review-card">
+				<div class="user-dp" data-rating="4.9"><img src="../Images/mark.jpg" style="border-radius: 50%;" alt="">
+				</div>
+				<h2 class="review-title">best quality more than my expectation</h2>
+				<p class="review">I recently bought my Genie M4 from the Spectrum Mobile for 12500.
+					They have the best selection of cell phones available at the best prices.
+					Hence, I bought it from them as I trust them more than the online e-commerce websites.</p>
+			</div>
+			<div class="review-card">
+				<div class="user-dp" data-rating="4.8"><img src="../Images/elon.png" style="border-radius: 50%;" alt="">
+				</div>
+				<h2 class="review-title">Excellent Service, FAST Delivery!</h2>
+				<p class="review">Fast and quick service. easy transaction method. It arrived sooner than expected.
+					Thank you very much! I love the product.</p>
+			</div>
+			<div class="review-card">
+				<div class="user-dp" data-rating="5"><img src="../Images/john.jfif" style="border-radius: 50%;" alt="">
+				</div>
+				<h2 class="review-title">best quality more than my expectation</h2>
+				<p class="review">On the Spectrum Mobile, product information is available, which helped a lot.
+					I compared many products and purchased Realme Mobile. My delivery was done before time and I got all
+					the updates related to my product.</p>
+			</div>
+			<div class="review-card">
+				<div class="user-dp" data-rating="5"><img src="../Images/jack.jpg" style="border-radius: 50%;" alt="">
+				</div>
+				<h2 class="review-title">best quality more than my expectation</h2>
+				<p class="review">If you ever bought from Samsung or Amazon, I would really appreciate Spectrum Mobile.
+					They would send a replacement right away and give you a flexible window to return the defective
+					product.
+					Big respect for the service.</p>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- ORDER NOW -->
+	<section class="end-section">
+		<div class="section-item-container">
+			<img src="../Images/dark.jpg" class="section-bg" alt="">
+			<div class="section-info">
+				<h1 class="title">Order <span>Now</span></h1>
+				<p class="info">Want a new phone? We have the latest devices for sale</p>
+				<button><a href="../Pages/Page1.html" style="text-decoration:none; color: #fff;">ORDER NOW</a></button>
+			</div>
+		</div>
+	</section>
+	<footer id="target"></footer>
+	<script>
+		function displaydate() {
+			var todays_date = new Date();
+			document.getElementById("target").innerHTML = todays_date;
+			setTimeout(displaydate);
+		}
+		displaydate();
+	</script>
+</body>
+</HTML>
