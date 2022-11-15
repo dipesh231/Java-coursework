@@ -1,0 +1,255 @@
+<HTML>
+	<HEAD>
+		<title>Spectrum Mobile</title>
+	</HEAD>
+	<body>
+		<script src="../Javascript/myScript.js"></script>
+		<style>
+		.card {
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			max-width: 300px;
+			margin: auto;
+			text-align: center;
+			font-family: arial;
+		}
+
+		.price {
+			color: grey;
+			font-size: 22px;
+		}
+
+		.card button {
+			border: none;
+			outline: 0;
+			padding: 12px;
+			color: white;
+			background-color: #000;
+			text-align: center;
+			cursor: pointer;
+			width: 100%;
+			font-size: 18px;
+		
+		}
+
+		.card button:hover {
+			opacity: 0.7;
+		}
+
+		/* review section */
+
+		.review-section {
+			padding: 50px 5vw;
+		}
+
+		.section-title span {
+			color: #d5be8b;
+		}
+
+		.review-container {
+			margin: 50px;
+			margin-bottom: 0;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.review-card {
+			width: 250px;
+			height: auto;
+			font-family: 'lato', sans-serif;
+		}
+		
+
+		.review-title {
+			font-size: 20px;
+			line-height: 25px;
+			margin: 30px 0;
+			text-transform: capitalize;
+		}
+
+		.review {
+			opacity: 0.7;
+		}
+
+		/* best selling product */
+
+		.best-selling-product-section {
+			padding: 50px 5vw;
+			background: url(../Images/marble.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin-top: 5px;
+			
+		}
+
+		.section-title {
+			text-transform: capitalize;
+			font-size: 30px;
+			margin-bottom: 30px;
+		}
+
+		.product-container {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.product-card {
+			border: 15px solid #d5be8b;
+			width: 300px;
+			height: 300px;
+			overflow: hidden;
+			position: relative;
+			background: #d5be8b;
+		}
+
+	
+
+		.product-img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: .5s;
+		}
+
+		.product-name {
+			position: absolute;
+			color: #fff;
+			text-transform: capitalize;
+			font-family: 'lato', sans-serif;
+			font-size: 25px;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			opacity: 0;
+			transition: .5s;
+		}
+
+		.product-card:hover .product-name {
+			opacity: 1;
+		}
+
+		.product-card:hover .product-img {
+			opacity: 0.5;
+		}
+		.header-heading {
+			font-size: 100px;
+			text-transform: capitalize;
+			color: black;
+			padding-top: 20px;
+		}
+
+		.header-heading span {
+			color: #d5be8b;
+		}
+		
+
+
+		</style>
+		<link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+		<div class="top">
+			<div class="Navbar">
+				<img src="../Images/logo.png">
+				<ul>
+					<li><a href="../Index/Index.html">Home </a></li>
+					<li class="active"><a href="Page1.html">Products</a></li>
+					<li><a href="Page2.html">Blog</a></li>
+					<li><a href="Page3.html">Research</a></li>
+					<li><a href="Page4.html">Contact</a></li>
+				</ul>
+			</div>
+			<div class="user-interactions">
+				<div class="cart">
+					<img src="../Images/cart.png" class="cart-icon" alt="">
+					<span class="cart-item-count" id="target">00</span>
+				</div>
+			</div>
+		</div>
+	
+
+	<section class="best-selling-product-section">
+		<h1 class="header-heading"><span>Our </span> Products</h1>
+		<div class="product-container">
+			<div class="card">
+				<img src="../Images/iphone.png" alt="Iphone" style="width:100%">
+				<h1>iPhone 13 Pro Max</h1>
+				<p class="price">Rs.191,990</p>
+				<li>Dimension: 160.8 x 78.1 x 7.65mm, 240 grams</li>
+				<li>Display: 6.7 inch OLED, Super Retina XDR with 120Hz ProMotion</li>
+				<li>Resolution: 2778 x 1284 pixels, 458 PPI</li>
+				<li>Chipset: Six-core A15 Bionic 64-bit processor, 16-core Neural Engine</li>
+				<li>Storage: 128GB</li>
+				<li>SIM: Dual SIM (nano + eSIM), dual eSIM</li>
+					<p id="xyz"><button onclick= "myFunction()">Add to Cart</button></p>
+			</div>
+			<div class="card">
+				<img src="../Images/s22.jpg" alt="Samsung" style="width:100%">
+				<h1>Samsung Galaxy S22</h1>
+				<p class="price">Rs. 159,999(12/256GB)</p>
+				*Display: 6.8-inches Dynamic AMOLED 2X Infinity-O, Gorilla Glass Victus+, Adaptive 120Hz refresh rate, 1750nits, Vision Booster<br>
+				*Resolution: WQHD+ (3200 x 1440 pixels)<br>
+				*Chipset: Snapdragon 8 Gen 1 (4nm)<br>
+				*CPU: Octa-core (1x Cortex-X2 + 3x Cortex-A710 + 4x Cortex-A510)<br>
+				*RAM: 8/12GB LPDDR5<br>
+				*Storage: 128/256/512GB<br>
+				<p><button  onclick="myFunction()">Add to Cart</button></p>			
+			</div>
+			<div class="card">
+				<img src="../Images/RedmiNote11pro.png" alt="Redmi" style="width:100%">
+				<h1>Redmi Note11 pro</h1>
+				<p class="price">Rs. 39,999(8/128GB)</p>
+				*16.94cm (6.67"), FHD Plus<br>
+				*8GB RAM | 128GB ROM | Android 11<br>
+				*MediaTek Helio G96 Octa-core Processor<br>
+				*R: 108MP + 8MP + 2MP | F: 16MP<br>
+				*5000mAh Lithium Polymer Battery<br>
+				*Proximity Sensor | Ambient Light Sensor | Accelerometer<br>
+				<p><button  onclick="myFunction()">Add to Cart</button></p>		
+			</div>
+		</div>
+		<div class="product-container" style="margin-top: 5%;">
+			<div class="card">
+				<img src="../Images/Huawei Mate 30 pro.jpg" alt="Huawei" style="width:100%">
+				<h1>Huawei Mate 30 pro</h1>
+				<p class="price">NPR. 129,900</p>
+				*Display: 6.53-inch OLED “Huawei Horizon” Display<br>
+				*Resolution: Full-HD+ (2400 x 1176 pixels); 18.5:9 aspect ratio<br>
+				*Chipset: HUAWEI Kirin 990; 7nm Mobile Platform<br>
+				*CPU: Octa-core<br>
+				*RAM: 8GB LPDDR4x<br>
+				*Storage: 256GB storage, expandable up to 256GB with Nano Memory card<br>
+				<p><button  onclick="myFunction('Huawei');">Add to Cart</button></p>		
+			</div>
+			<div class="card">
+				<img src="../Images/oneplus.jpg" alt="oneplus" style="width:100%">
+				<h1>OnePlus Nord N10  </h1>
+				<p class="price">Rs.NPR 39,490</p>
+				*Display: 6.49” IPS LCD (1080 x 2400 pixels) FHD+ panel; 90Hz refresh rate<br>
+				*Software: Android 10 with Oxygen OS 10.5<br>
+				*Chipset: Octa-core 8nm Qualcomm Snapdragon 690<br>
+				*CPU: 2GHz x 2 Cortex A77+1.8GHz x 6 Cortex A55<br>
+				*RAM: 6GB LPDDR4X<br>
+				*Storage: 128GB UFS 2.1, expandable memory up to 512GB with microSD
+				<p><button  onclick="myFunction('oneplus');">Add to Cart</button></p>			
+			</div>
+			<div class="card">
+				<img src="../Images/iPhone-11-Pro.jpg" alt="iphone" style="width:100%">
+				<h1>iPhone 11 Pro</h1>
+				<p class="price">Rs.169,000(256GB)</p>
+				*Display: 5.8 inch (2436 x 1125 pixels) OLED 458ppi Super Retina XDR display<br>
+				*Chipset: Six-core A13 Bionic 64-bit processor, 8-core Neural Engine<br>
+				*Storage: 64GB, 256GB, 512GB<br>
+				*OS: iOS 15<br>
+				*SIM: Dual SIM (nano + eSIM)<br>
+				*Other features: Water and dust resistant (IP68), Stereo speakers
+				<p><button  onclick="myFunction('iphone');">Add to 	Cart</button></p>
+			</div>
+		</div>
+	</section>
+	<script>
+	function myFunction(){
+		alert("Product has been added to a cart")
+	}
+	</script> 
+	
+<footer>Made by @Dipesh Bharati</footer>
+	</body>
+</HTML>
